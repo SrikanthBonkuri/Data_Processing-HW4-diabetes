@@ -16,15 +16,26 @@ Rank the features according to their squared correlation with the target.
 Note that squared correlation is the same as $R^2$ for univariate regression. 
 Visualize the ordered scores with a bar chart.
 
+### Visualization:
+![image](https://user-images.githubusercontent.com/45035308/202631882-f7517733-b07c-48af-9f73-484caf4f1da1.png)
+
+
 ## Question 2
 
 Rank the features according to the order that they're added in the [forward sequential feature selection](https://scikit-learn.org/stable/modules/generated/sklearn.feature_selection.SequentialFeatureSelector.html) algorithm. Use this ranking to reorder the bar chart in question 1.
+
+### Visualization:
+![Q2_Rank ordered features](https://user-images.githubusercontent.com/45035308/202631938-b5f5e526-2d7f-40b7-9345-de97a080f6aa.png)
+
 
 ## Question 3
 
 Compare the bar charts in Questions 1 & 2.
 Briefly discuss differences between the two charts and possible causes.
 Add a figure to prove your point.
+
+### Visualization:
+
 
 ## Question 4
 
