@@ -56,6 +56,7 @@ which uses cross-validation to determine the best `alpha`, may be helpful in ans
 
 ### Visualization:
 ![Q4_CV_by_Component_Count](https://user-images.githubusercontent.com/45035308/203201050-cf0d3ee6-8291-4735-b4c5-2ff905716dcf.png)
+
 With the dimensionality of the model being increased, the Cross validation score is observed to be increasing till nc=4, and it is almost same after that.
 And the std error is found to be non increasing.
 
