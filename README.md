@@ -34,6 +34,12 @@ Briefly discuss differences between the two charts and possible causes.
 Add a figure to prove your point.
 
 ### Visualization:
+
+Observing the bar charts of Feature vs Squared relation from Q1 and Q2, where chart of Q1 is ordered with respect to the value of squared relation, and chart of Q2 been ranked as per the order according to forward sequential feature selection. It is found that the features {bmi, s5, bp} follows the same ranks being the top 3 features in both approaches.
+The features s4 and s6 which had 4th and 6th highest squared relation has been shifted to the rank of 8 and 10 in forward selection respectively.
+Likewise, the features s2 and sex had better ranks in forward selection by difference of 2 and 5 positions compared to their respective positions with squared relation order.
+The positions of features s3, s1 and age has differed by one place.
+
 ![image](https://user-images.githubusercontent.com/45035308/202631882-f7517733-b07c-48af-9f73-484caf4f1da1.png)
 ![Q2_Rank ordered features](https://user-images.githubusercontent.com/45035308/203200887-8a5586c1-6381-45cb-a397-2e0b9f4c9e39.png)
 
