@@ -25,8 +25,7 @@ Visualize the ordered scores with a bar chart.
 Rank the features according to the order that they're added in the [forward sequential feature selection](https://scikit-learn.org/stable/modules/generated/sklearn.feature_selection.SequentialFeatureSelector.html) algorithm. Use this ranking to reorder the bar chart in question 1.
 
 ### Visualization:
-![Q2_Rank ordered features](https://user-images.githubusercontent.com/45035308/202631938-b5f5e526-2d7f-40b7-9345-de97a080f6aa.png)
-
+![Q2_Rank ordered features](https://user-images.githubusercontent.com/45035308/203200839-b5b80e82-1bb1-4d1b-ac8c-6fadc7c5fcb3.png)
 
 ## Question 3
 
@@ -35,6 +34,8 @@ Briefly discuss differences between the two charts and possible causes.
 Add a figure to prove your point.
 
 ### Visualization:
+![image](https://user-images.githubusercontent.com/45035308/202631882-f7517733-b07c-48af-9f73-484caf4f1da1.png)
+![Q2_Rank ordered features](https://user-images.githubusercontent.com/45035308/203200887-8a5586c1-6381-45cb-a397-2e0b9f4c9e39.png)
 
 
 ## Question 4
@@ -47,6 +48,16 @@ Comment on the dimensionality of the dataset and the degree of overfitting.
 Hint: The [CV-diabetes demo](https://scikit-learn.org/stable/auto_examples/exercises/plot_cv_diabetes.html),
 which uses cross-validation to determine the best `alpha`, may be helpful in answering this question.
 
+### Visualization:
+![Q4_CV_by_Component_Count](https://user-images.githubusercontent.com/45035308/203201050-cf0d3ee6-8291-4735-b4c5-2ff905716dcf.png)
+
+
+
 ## Question 5
 
 The [lasso lars demo](https://scikit-learn.org/stable/auto_examples/linear_model/plot_lasso_lars.html) computes and plots the coefficients with lasso. Add a legend to the plot so that you can relate colors to feature names. Briefly compare the lasso ordering to your answers above.
+
+### Visualization:
+![Q5_Lasso](https://user-images.githubusercontent.com/45035308/203201081-c0401c69-4357-4b51-aca6-301e12d7ac89.png)
+
+
