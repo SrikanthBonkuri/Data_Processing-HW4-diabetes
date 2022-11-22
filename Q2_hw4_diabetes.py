@@ -25,8 +25,10 @@ linear_regression = LinearRegression()
 l = len(columns)
 
 store = []
+flag = []
 for i in range(l):
-    store.append(['a', False])
+    store.append(['a', 0])
+    flag.append(False)
 
 k = 0
 
@@ -37,33 +39,40 @@ for i in range(l-1):
     #print(arr)
     for j in range(l):
         if arr[j]==True:
-            if store[j][1]==False:
+            if flag[j]==False:
+                X_curr = X[:,j]
+                X_curr = X_curr.reshape(-1,1)
+                model = linear_regression.fit(X_curr, y)
                 store[k][0] = columns[j]
-                store[j][1] = True
+                store[k][1] = model.score(X_curr,y)
+                flag[j] = True
                 k += 1
                 break
 
 print(arr)
 for j in range(l):
     if arr[j]!=True:
+        X_curr = X[:,j]
+        X_curr = X_curr.reshape(-1,1)
+        model = linear_regression.fit(X_curr, y)
         store[k][0] = columns[j]
-        store[j][1] = True
+        store[k][1] = model.score(X_curr,y)
         k+=1
         break
 
 
 print('Rankwise Features Order:')
 for i in range(l):
-    store[i][1] = i+1
+    #store[i][1] = i+1
     print(store[i][0],end=',')
 
 sns.set(style='whitegrid')
-data = pd.DataFrame(store, columns = ['Feature', 'Rank']) 
-reg = sns.barplot(data=data, x='Feature', y='Rank')
+data = pd.DataFrame(store, columns = ['Feature', 'Squared relation']) 
+reg = sns.barplot(data=data, x='Feature', y='Squared relation')
 
 fig = reg.get_figure()
 fig.subplots_adjust(top=0.90)
-fig.suptitle('Ranks by Feature')
+fig.suptitle('Ranks ordered plot')
 fig.savefig('figs/Q2_Rank ordered features')
 
 

@@ -15,6 +15,8 @@ diabetes = load_diabetes()
 X, y = diabetes.data, diabetes.target
 columns = diabetes.feature_names
 
+print(columns)
+
 from sklearn.linear_model import LinearRegression
 
 linear_regression = LinearRegression()
