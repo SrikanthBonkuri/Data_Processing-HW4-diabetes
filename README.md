@@ -68,4 +68,6 @@ The [lasso lars demo](https://scikit-learn.org/stable/auto_examples/linear_model
 ### Visualization:
 ![Q5_Lasso](https://user-images.githubusercontent.com/45035308/203201081-c0401c69-4357-4b51-aca6-301e12d7ac89.png)
 
+Comparing the lasso ordering to above observations, it is found that the features {s5, bmi} follows the same ranks being the top 2 features in both lasso order. Feature s2 has moved to 3rd in top order. The features s4 and s6 are in top order rank of 5 and 7 respectively. And the positions of features s1 and sex are been the lowest in order.
+
 
