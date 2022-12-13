@@ -55,7 +55,7 @@ Hint: The [CV-diabetes demo](https://scikit-learn.org/stable/auto_examples/exerc
 which uses cross-validation to determine the best `alpha`, may be helpful in answering this question.
 
 ### Visualization:
-![Q4_CV_by_Component_Count](https://user-images.githubusercontent.com/45035308/203201050-cf0d3ee6-8291-4735-b4c5-2ff905716dcf.png)
+![Q4_CV_by_Component_Count](https://user-images.githubusercontent.com/45035308/207253860-43823d7a-af55-4cc9-b4ce-733d9ca3157c.png)
 
 With the dimensionality of the model being increased, the Cross validation score is observed to be increasing till nc=4, and it is almost same after that.
 And the std error is found to be non increasing.
@@ -66,7 +66,7 @@ And the std error is found to be non increasing.
 The [lasso lars demo](https://scikit-learn.org/stable/auto_examples/linear_model/plot_lasso_lars.html) computes and plots the coefficients with lasso. Add a legend to the plot so that you can relate colors to feature names. Briefly compare the lasso ordering to your answers above.
 
 ### Visualization:
-![Q5_Lasso](https://user-images.githubusercontent.com/45035308/203201081-c0401c69-4357-4b51-aca6-301e12d7ac89.png)
+![Q5_Lasso](https://user-images.githubusercontent.com/45035308/207253927-c8d1d413-3ad1-4fd4-acf6-ad3eea2ab266.png)
 
 Comparing the lasso ordering to above observations, it is found that the features {s5, bmi} follows the same ranks being the top 2 features in both lasso order. Feature s2 has moved to 3rd in top order. The features s4 and s6 are in top order rank of 5 and 7 respectively. And the positions of features s1 and sex are been the lowest in order.
 
