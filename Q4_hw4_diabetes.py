@@ -31,16 +31,17 @@ nc = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 tuned_parameters = [{"pca__n_components": nc}]
 n_folds = 5
 
-clf = GridSearchCV(pcr, tuned_parameters, cv=n_folds, refit=False)
+clf = GridSearchCV(pcr, tuned_parameters, cv=n_folds, refit=False, return_train_score=True)
 clf.fit(X, y)
-#train_scores = clf.cv_results_['mean_train_score']
+train_scores = clf.cv_results_['mean_train_score']
 scores = clf.cv_results_["mean_test_score"]
 scores_std = clf.cv_results_["std_test_score"]
 
-#print('Train ' + str(train_scores))
+print('Train ' + str(train_scores))
 print('Test ' + str(scores))
 
 plt.plot(nc, scores)
+plt.plot(nc, train_scores)
 
 std_error = scores_std / np.sqrt(n_folds)
 
