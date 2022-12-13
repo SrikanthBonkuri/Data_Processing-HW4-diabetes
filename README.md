@@ -59,6 +59,7 @@ which uses cross-validation to determine the best `alpha`, may be helpful in ans
 
 With the dimensionality of the model being increased, the Cross validation score is observed to be increasing till nc=4, and it is almost same after that.
 And the std error is found to be non increasing.
+The orange curve represents the training score.
 
 
 ## Question 5
